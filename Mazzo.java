@@ -1,5 +1,7 @@
-public class Mazzo {
+import java.util.Random;
 
+public class Mazzo {
+	
 	private CartaDaGioco[] mazzo;
 	
 	public Mazzo() {
@@ -38,7 +40,7 @@ public class Mazzo {
 		return supporto;
 	}//toString
 	
-	/* Metodo mescolare - non funzionante
+	/* Metodo mescolare - non funzionante*/
 	public void mescolare() {
 		CartaDaGioco[] mazzo2 = new CartaDaGioco[40];
 		Random random = new Random(); //Errore su questa operazione
@@ -49,7 +51,7 @@ public class Mazzo {
 			int j = random.nextInt(39);
 			mazzo[i] = mazzo2[j];
 		}//for
-	}//mescolare*/
+	}//mescolare
 	
 	/*Metodo primaCarta, rimuove la prima carta del mazzo
 	@return prima carta del mazzo
